@@ -52,12 +52,13 @@ html{
 
 body {
     width:70%;
-    max-width:1024px;
-    min-width: 800px;
-    background-color:#F8BBD0;
+    max-width:1330px;
+    min-width: 480px;
+    background-color:#ffffff;
     margin:0 auto;
-    padding:10px;
-    font-family:Arial, Helvetica, sans-serif
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 p {
     font-size: 1.25em;
@@ -66,7 +67,22 @@ figcaption, label, input, small{
     font-size: 1em;
 }
 nav a {
-    font-size: 1.5em;}
+    font-size: 1.5em;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 4px;
+    display: inline-flex;
+    float: right;
+    color: #ffffff;
+    font-size: large;
+    font: bolder;
+}
+header{
+    background-color: rgb(2, 3, 3);
+    padding-bottom: 50px;
+    
+}
 h1 {
     font-size: 3em;
 }
@@ -74,3 +90,21 @@ h2 {
     font-size: 2em;
 }
 
+header h1{
+    background-color: #ffffff;
+    padding: 10px;
+}
+header h1 a{
+    color: #007d7b;
+}
+main section h1{
+    text-align: center;
+    padding: 10px;
+    font-size:30px;
+    font-weight: bolder;
+}
+main section p{
+    text-align: left;
+    padding: 10px;
+    font-size:15px;
+}
