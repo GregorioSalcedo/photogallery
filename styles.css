@@ -29,6 +29,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    margin:0;
+    padding: 0;
 }
 ol, ul {
     list-style: none;
@@ -45,6 +47,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
 
 html{
     background-color: black;
@@ -72,8 +79,9 @@ nav a {
     text-decoration: none;
     padding: 10px;
     padding-right: 4px;
-    display: inline-flex;
+    
     float: right;
+    text-align: center;
     color: #ffffff;
     font-size: large;
     font: bolder;
@@ -93,10 +101,13 @@ h2 {
 header h1{
     background-color: #ffffff;
     padding: 10px;
+    font-size:35px;
+    font-weight: bolder;
 }
 header h1 a{
     color: #007d7b;
 }
+
 main section h1{
     text-align: center;
     padding: 10px;
@@ -106,5 +117,67 @@ main section h1{
 main section p{
     text-align: left;
     padding: 10px;
-    font-size:15px;
 }
+.response{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    
+}
+.photos{
+    padding-left: 10px;
+}
+.desc{
+    text-align: center;
+    height: 15rem;
+    margin-top: -15rem;
+    font-weight: bolder;
+}
+#contact{
+    background-color: black;
+    padding: 20px;
+}
+#contact p,label{
+    color: #ffffff;
+}
+#contact h1{
+    color: #ffffff;
+}
+input[type=text],
+select,
+textarea {
+  color: #007d7b;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #007d7b;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+@media only screen and (max-width: 1300px) {
+    .response {
+        grid-template-columns: 1fr 1fr;
+    }
+    nav{
+        
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .response {
+        grid-template-columns: 1fr;
+    }
+
+    }
