@@ -170,9 +170,6 @@ footer{
     .response {
         grid-template-columns: 1fr 1fr;
     }
-    nav{
-        
-    }
   }
   
   @media only screen and (max-width: 500px) {
